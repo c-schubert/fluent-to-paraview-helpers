@@ -211,7 +211,7 @@ if dryrun == False:
     replaceNumberOfFileWithStars(join(targetfolder,trans_case_name),dryrun)
 
 
-appstr = "TIME\n" +  "time set: 1\n" + "number of steps: " + str(len(times)) + "\n" + "filename start number: 0 \n" + "filename increment: 1 \n" + "time values: " + " ".join(str(x) for x in times) + "\n"
+appstr = "TIME\n" +  "time set: 1\n" + "number of steps: " + str(len(times)) + "\n" + "filename start number: 0 \n" + "filename increment: 1 \n" + "time values: " + "\n".join(str(x) for x in times)
 
 appendToFile(join(targetfolder,trans_case_name),appstr, dryrun)
 

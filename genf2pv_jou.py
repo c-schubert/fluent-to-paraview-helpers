@@ -155,7 +155,7 @@ for fn in onlyfiles:
             writeOutput = False
 
         if writeOutput == True:
-            str1 = "file"+str01+fn+"\n"
+            str1 = "/file"+str01+fn+"\n"
             str4 = "/file/export/ensight-gold \""+ exportfolder + "/" + exportname+"_%f\" " + variables + " () "+ writeBinary +" * () () "+ cellBased +" \n"
 
             if dryrun == True:
